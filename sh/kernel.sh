@@ -25,9 +25,12 @@ set -e
 # Virtualization  
 # Networking support 
 # Platform selection 
-# Device Drivers > Graphics support >  Direct Rendering Manager
-# PCI
+# Device Drivers > Graphics support >  Direct Rendering Manager    Serial ATA and Parallel ATA drivers        
+# SCSI device support  Multimedia support   Staging drivers PCI GNSS  Multiple devices driver support
+
 # File systems > Dnotify support       Filesystem wide access notification       Quota support    FUSE   EFI Variable filesystem 
+# 
+
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- tinyconfig
 
