@@ -41,4 +41,10 @@ sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdb bs=1k seek=8
 mkimage -A arm64 -T script -C none -n "Boot script" -d boot.cmd boot.scr
 
 #复制文件
+
+sudo rm -rf /media/liangqi/ce1e6c97-8fa0-4565-ad81-4b4ff9a08c82/*
+
+mkdir -p rootfs
+tar -xf rootfs.tar -C rootfs
+
 sudo cp -a ./rootfs/. /media/liangqi/ce1e6c97-8fa0-4565-ad81-4b4ff9a08c82/
