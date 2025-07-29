@@ -1,12 +1,14 @@
-tar -xjf busybox-1.36.1.tar.bz2
+sudo tar -xjf busybox-1.36.1.tar.bz2
 
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- mrproper
+sudo tar -xf rootfs.tar
 
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- defconfig
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- mrproper
 
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- defconfig
 
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
+
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
 
 
 
