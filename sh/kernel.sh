@@ -13,16 +13,19 @@ set -e
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- mrproper
 
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- defconfig
+
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- tinyconfig
 
-# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- defconfig
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
+
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- olddefconfig
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) 
 
 # 可选
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- modules_install INSTALL_MOD_PATH=./mod_rootfs
 
-# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 
 
 # 基础字符设备支持
@@ -95,6 +98,3 @@ scripts/config --enable CONFIG_OF_RESERVED_MEM
 
 # 看门狗（可选）
 scripts/config --enable CONFIG_WATCHDOG
-
-# 更新依赖项（生成最终 .config）
-sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- olddefconfig
