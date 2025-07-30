@@ -22,10 +22,12 @@ set -e
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 
 # 可以去掉的模块
-            # Virtualization  
+            # Virtualization 
             # Networking support 
             # Platform selection 
             
+            # Kernel Features > Xen guest support on ARM64
+
             # Kernel hacking > Kernel debugging  
 
             # General setup > BPF
@@ -41,6 +43,7 @@ set -e
             # EFI 
 
             # Support initial ramdisk/ramfs compressed using ZSTD 等不用的文件系统
+
 
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- oldconfig       
