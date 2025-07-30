@@ -22,18 +22,28 @@ set -e
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 
 # 可以去掉的模块
-# Virtualization  
-# Networking support 
-# Platform selection 
-# Device Drivers > Graphics support >  Direct Rendering Manager    Serial ATA and Parallel ATA drivers        
-# SCSI device support  Multimedia support   Staging drivers PCI GNSS  Multiple devices driver support  
-# LED Support  Platform support for Chrome hardware  FPGA Configuration Framework    ACPI
-# VFIO Non-Privileged      Virtio drivers     VHOST drivers   
+            # Virtualization  
+            # Networking support 
+            # Platform selection 
+            
+            # Kernel hacking > Kernel debugging  
 
-# File systems > Dnotify support       Filesystem wide access notification       Quota support    FUSE   EFI Variable filesystem 
-# Miscellaneous filesystems
+            # General setup > BPF
 
-# EFI
+            # Device Drivers > Graphics support >  Direct Rendering Manager    Serial ATA and Parallel ATA drivers        
+                                # SCSI device support  Multimedia support   Staging drivers PCI GNSS  Multiple devices driver support  
+                                # LED Support  Platform support for Chrome hardware  FPGA Configuration Framework    ACPI
+                                # VFIO Non-Privileged      Virtio drivers     VHOST drivers   
+
+            # File systems >     Dnotify support       Filesystem wide access notification       Quota support    FUSE   EFI Variable filesystem 
+                                # Miscellaneous filesystems
+
+            # EFI 
+
+            # Support initial ramdisk/ramfs compressed using ZSTD 等不用的文件系统
+
+
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- oldconfig       
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- tinyconfig
 
