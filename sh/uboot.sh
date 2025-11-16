@@ -2,7 +2,6 @@
 
 sudo tar -xzvf uboot.tar.gz
 
-
 sudo make mrproper
 
 sudo make distclean

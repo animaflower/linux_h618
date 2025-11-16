@@ -13,6 +13,12 @@ set -e
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- mrproper
 
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- distclean
+
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- clean
+
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- linux_sunxi64_defconfig
+
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- defconfig
 
 # sudo scripts/config --disable MODULES # 禁用模块支持
@@ -62,11 +68,11 @@ set -e
 
 
 
-# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- oldconfig       
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- oldconfig
 
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- tinyconfig
 
-# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) 
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
 
 # 可选
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- modules_install INSTALL_MOD_PATH=./mod_rootfs
